@@ -1,0 +1,84 @@
+.container {
+  background: linear-gradient(to bottom, rgb(0, 0, 65), rgb(0, 0, 26));
+  width: auto;
+  height: auto;
+  color: white;
+  margin: 5%;
+  padding: 4%;
+  border-radius: 15px;
+}
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.photo {
+  border: 25px solid black;
+  border-radius: 50%;
+  width: 60%;
+  height: 50%;
+  margin: 15px;
+  opacity: 0.8;
+  box-shadow: 0px 0px 40px 20px #000161;
+  animation: zoom-in-zoom-out 3s ease-out infinite;
+}
+.button {
+  background: #00001cad;
+  color: white;
+  box-shadow: 0px 0px 20px 4px #000161;
+  border: 2px solid #525252eb;
+  border-radius: 27px;
+  margin: 0px 25px;
+  padding: 8px 8px 3px 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.playButton {
+  display: flex;
+  justify-content: center;
+}
+.playBar {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+.bar {
+  user-select: none;
+  width: 85%;
+  display: flex;
+  align-items: center;
+}
+.barTime {
+  color: white;
+  font-size: 13px;
+}
+
+.progressBar {
+  flex: 1;
+  border-radius: 5px;
+  margin: 0 20px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.progressBarPoint {
+  position: relative;
+  height: 15px;
+  width: 15px;
+  border: 1.5px solid white;
+  border-radius: 50%;
+  background-color: #0a0380;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
